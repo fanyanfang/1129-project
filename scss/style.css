@@ -1,0 +1,139 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  -webkit-user-select: none;
+  -webkit-font-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: "微软雅黑";
+  background: #ecedf1; }
+
+header {
+  width: 100%;
+  height: 50px;
+  background: #11b7f3;
+  padding: 0 10px;
+  color: #fff;
+  position: relative; }
+  header h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.4rem; }
+    header h1 i {
+      font-size: 1rem; }
+  header .info {
+    position: absolute;
+    left: 13px;
+    top: 17px;
+    font-size: 1.1rem; }
+  header .span {
+    position: absolute;
+    right: 13px;
+    top: 13px; }
+    header .span .phone {
+      width: 24px;
+      height: 25px;
+      background: url("../img/use_03.png") no-repeat center center;
+      background-size: 100% 100%;
+      position: absolute;
+      right: 37px; }
+    header .span .user {
+      width: 22px;
+      height: 22px;
+      background: url("../img/use_06.png") no-repeat center center;
+      background-size: 100% 100%;
+      position: absolute;
+      top: 1px;
+      right: 0; }
+
+section {
+  -webkit-flex: 1;
+  padding: 10px 10px;
+  overflow: hidden; }
+  section .dialog {
+    display: flex;
+    flex-direction: horizontal;
+    margin-bottom: 10px;
+    position: relative; }
+    section .dialog .portrait {
+      width: 40px;
+      height: 40px;
+      background: url("../img/bj.jpg") no-repeat center center;
+      background-size: 100% 100%;
+      line-height: 40px;
+      border-raduis: 100%;
+      font-size: 0;
+      flex-shrink: 0; }
+    section .dialog .word {
+      background: #6ecaff;
+      color: #fff;
+      border-radius: 10px;
+      margin-left: 10px;
+      padding: 12px 10px;
+      position: relative;
+      z-index: 4; }
+    section .dialog em {
+      position: absolute;
+      left: 44px;
+      z-index: 1; }
+      section .dialog em:after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        background: #6ecaff;
+        border-radius: 100%;
+        z-index: -1; }
+      section .dialog em:before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        width: 15px;
+        height: 15px;
+        background: #ecedf1;
+        border-radius: 100%;
+        z-index: 0; }
+
+footer {
+  width: 100%;
+  height: 45px;
+  line-height: 35px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: horizontal; }
+  footer .text {
+    border-radius: 3px;
+    -webkit-flex: 1; }
+    footer .text input {
+      width: 100%;
+      height: 100%;
+      float: left;
+      text-indent: 10px; }
+  footer .send {
+    width: 60px;
+    background: #dddee2;
+    border-radius: 3px;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff; }
+  footer .active {
+    background: #67a5ff; }
+
+/*# sourceMappingURL=style.css.map */
